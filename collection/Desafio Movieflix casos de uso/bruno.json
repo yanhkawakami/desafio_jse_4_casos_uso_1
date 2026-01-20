@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Desafio Movieflix casos de uso",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

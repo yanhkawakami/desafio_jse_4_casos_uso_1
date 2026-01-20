@@ -1,0 +1,19 @@
+meta {
+  name: All genres
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/genres
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}

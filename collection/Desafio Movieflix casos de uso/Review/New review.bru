@@ -1,0 +1,27 @@
+meta {
+  name: New review
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/reviews
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+      "text" : "Gostei do filme!",
+      "movieId" : 1
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

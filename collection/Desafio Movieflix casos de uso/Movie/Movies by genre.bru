@@ -1,0 +1,25 @@
+meta {
+  name: Movies by genre
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{host}}/movies?genreId=0&page=0&size=6
+  body: none
+  auth: bearer
+}
+
+params:query {
+  genreId: 0
+  page: 0
+  size: 6
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+}
