@@ -1,0 +1,20 @@
+meta {
+  name: Movie paged
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{host}}/movies
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
