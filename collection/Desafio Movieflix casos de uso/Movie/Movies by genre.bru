@@ -5,15 +5,13 @@ meta {
 }
 
 get {
-  url: {{host}}/movies?genreId=0&page=0&size=6
+  url: {{host}}/movies?genreId=1
   body: none
   auth: bearer
 }
 
 params:query {
-  genreId: 0
-  page: 0
-  size: 6
+  genreId: 1
 }
 
 auth:bearer {
@@ -22,4 +20,5 @@ auth:bearer {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
